@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Payment Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <form class="border rounded border-secondary w-50 mx-auto my-5 bg-white">
+
+
+        <h1 class="border-bottom p-2 bg-secondary bg-opacity-10 m-0">
+            Payment form example
+        </h1>
+
+        <div class="p-4">
+
+            <div class="row mb-3">
+                <div class="col-5">
+                    <label for="cardNumber" class="form-label">Card #</label>
+                    <input type="number" class="form-control" id="cardNumber" placeholder="XXXXXXXXXXXXXXXX" required>
+                </div>
+                <div class="col-3">
+                    <label for="cvc" class="form-label">CVC #</label>
+                    <input type="number" class="form-control" id="cvc" placeholder="0000" required>
+                </div>
+                <div class="col-4">
+                    <label for="amount" class="form-label">Amount</label>
+                    <input type="number" class="form-control" id="amount" placeholder="$ Amount" required>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-6">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="col-6">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-6">
+                    <label for="city" class="form-label">City</label>
+                    <input type="text" class="form-control" id="city" required>
+                </div>
+                <div class="col-3">
+                    <label for="state" class="form-label">State</label>
+                    <select class="form-select" id="state" required>
+                        <option selected>Pick a state</option>
+                        <option value="CA">Moon</option>
+                        <option value="TX">Mars</option>
+                        <option value="FL">Caripito</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <label for="postalCode" class="form-label">Postal Code</label>
+                    <input type="text" class="form-control" id="postalCode" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-6 ">
+                    <label for="We Accept">We Accept</label>
+                    <div class="d-flex gap-5 border border-secondary rounded border-opacity-10 m-0 p-2 bg-secondary">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1"
+                                required>
+                            <label class="form-check-label" for="radioDefault1">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" height="30">
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                            <label class="form-check-label" for="radioDefault2">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+                                    height="30">
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                            <label class="form-check-label" for="radioDefault2">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg"
+                                    height="30">
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                            <label class="form-check-label" for="radioDefault2">
+                                <img src="data:image/png;base64,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"
+                                    height="30">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Add any notes here." required></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="border border-secondary gap-3 border-opacity-10 m-0 p-2 bg-secondary bg-opacity-10 d-flex justify-content-end">
+            <button class="btn btn-secondary" type="reset">Cancel</button>
+            <button class="btn btn-primary" type="submit">Submit</button>
+
+        </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
